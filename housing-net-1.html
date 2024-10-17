@@ -1,42 +1,154 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Untitled Document</title>
-</head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HousingNet Contact</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
 
+        .container {
+            max-width: 700px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        td {
+            padding: 10px;
+        }
+
+        .logo {
+            text-align: center;
+        }
+
+        .logo img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .contact-info img {
+            vertical-align: middle;
+            width: 30px;
+            height: auto;
+            margin-right: 10px;
+        }
+
+        .contact-info a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+
+        .rating {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .social-icons {
+            text-align: center;
+        }
+
+        .social-icons a {
+            margin: 0 5px;
+            display: inline-block;
+        }
+
+        .social-icons img {
+            width: 38px;
+            height: auto;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .container {
+                padding: 10px;
+            }
+
+            .contact-info {
+                display: block;
+                text-align: center;
+            }
+
+            .rating img {
+                display: inline-block;
+            }
+        }
+    </style>
+</head>
 <body>
-<table border="0" cellpadding="0" width="700">
-  <tr>
-    <td width="200" rowspan="8"><p align="center"><strong><img src="clip_image001.gif" alt="" width="204" height="323" /></strong></p></td>
-    <td width="26" rowspan="8"><p align="center"><strong><img src="clip_image002.jpg" alt="" width="23" height="300" border="0" /></strong></p></td>
-    <td width="33"><p align="center"><strong>&nbsp;</strong></p></td>
-    <td width="431"><p>&nbsp;</p></td>
-  </tr>
-  <tr>
-    <td><p><img src="clip_image003.jpg" alt="" width="30" height="30" border="0" /></p></td>
-    <td><p>020 760 1500</p></td>
-  </tr>
-  <tr>
-    <td><p><img src="clip_image004.jpg" alt="" width="30" height="26" border="0" /></p></td>
-    <td><p><a href="mailto:info@housingnet.nl" target="_blank">info@housingnet.nl</a></p></td>
-  </tr>
-  <tr>
-    <td><p><img src="clip_image005.jpg" alt="" width="30" height="27" border="0" /></p></td>
-    <td><p>Churchill-laan 39, 1078DE, Amsterdam</p></td>
-  </tr>
-  <tr>
-    <td colspan="2"><p><a href="https://www.housingnet.nl/" target="_blank"><img src="clip_image006.jpg" alt="" width="350" height="74" border="0" /></a></p></td>
-  </tr>
-  <tr>
-    <td colspan="2" valign="top"><p><strong><em>We have a 5-star    rating on Google&nbsp;<img src="clip_image007.jpg" alt="" width="95" height="17" border="0" /></em></strong></p></td>
-  </tr>
-  <tr>
-    <td colspan="2"><p><u><a href="https://www.google.com/search?gs_ssp=eJzj4tFP1zc0yijKLirONTRgtFI1qDAxTzZNNU5JM7U0MDS2sEyyMqhIsUy0SDZLTDMxNE9OMbaw8OLKyC8tzsxLz0stAQBojxOP&amp;q=housingnet&amp;oq=housingnet&amp;aqs=chrome.1.69i57j46i39i175i199j0l2j0i10j46i175i199j0i30l4.2470j0j15&amp;sourceid=chrome&amp;ie=UTF-8#lrd=0x47c5e3df5901389b:0xd9a8c6af417cd388,1,," target="_blank">Click to see reviews</a></u></p></td>
-  </tr>
-  <tr>
-    <td colspan="2"><p><a href="https://www.linkedin.com/company/housingnet-nl/" target="_blank"><img src="clip_image008.jpg" alt="" width="45" height="39" border="0" /></a><a href="https://www.facebook.com/HousingNetNL" target="_blank"><img src="clip_image009.jpg" alt="" width="38" height="38" border="0" /></a><a href="https://www.instagram.com/housingnet/" target="_blank"><img src="clip_image010.jpg" alt="" width="38" height="38" border="0" /></a></p></td>
-  </tr>
-</table>
+    <div class="container">
+        <table>
+            <tr>
+                <td rowspan="8" class="logo">
+                    <img src="clip_image001.gif" alt="Logo">
+                </td>
+                <td rowspan="8">
+                    <img src="clip_image002.jpg" alt="Divider" style="width: 23px; height: 300px;">
+                </td>
+                <td class="contact-info">
+                    <img src="clip_image003.jpg" alt="Phone">
+                    020 760 1500
+                </td>
+            </tr>
+            <tr>
+                <td class="contact-info">
+                    <img src="clip_image004.jpg" alt="Email">
+                    <a href="mailto:info@housingnet.nl">info@housingnet.nl</a>
+                </td>
+            </tr>
+            <tr>
+                <td class="contact-info">
+                    <img src="clip_image005.jpg" alt="Address">
+                    Churchill-laan 39, 1078DE, Amsterdam
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" class="logo">
+                    <a href="https://www.housingnet.nl/" target="_blank">
+                        <img src="clip_image006.jpg" alt="Website Logo" style="max-width: 100%; height: auto;">
+                    </a>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" class="rating">
+                    <strong>We have a 5-star rating on Google</strong>
+                    <img src="clip_image007.jpg" alt="5-star rating">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" class="rating">
+                    <a href="https://www.google.com/search?q=housingnet#lrd=0x47c5e3df5901389b:0xd9a8c6af417cd388,1,,">Click to see reviews</a>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" class="social-icons">
+                    <a href="https://www.linkedin.com/company/housingnet-nl/" target="_blank">
+                        <img src="clip_image008.jpg" alt="LinkedIn">
+                    </a>
+                    <a href="https://www.facebook.com/HousingNetNL" target="_blank">
+                        <img src="clip_image009.jpg" alt="Facebook">
+                    </a>
+                    <a href="https://www.instagram.com/housingnet/" target="_blank">
+                        <img src="clip_image010.jpg" alt="Instagram">
+                    </a>
+                </td>
+            </tr>
+        </table>
+    </div>
 </body>
 </html>
