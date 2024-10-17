@@ -10,6 +10,7 @@
             margin: 0;
             padding: 0;
             background-color: #f5f5f5;
+            font-size: 15px; /* Smaller font size */
         }
 
         .container {
@@ -26,12 +27,14 @@
         }
 
         td {
-            padding: 5px; /* Reduced padding for a more compact layout */
+            padding: 3px; /* Reduced padding for a more compact layout */
             text-align: left; /* Left-align text */
         }
 
         .logo {
-            text-align: center; /* Keep logo centered */
+            text-align: left; /* Align logo to the left */
+            padding: 0; /* Remove padding */
+            margin: 0; /* Remove margin */
         }
 
         .logo img {
@@ -39,30 +42,34 @@
             height: auto;
         }
 
+        .contact-info {
+            display: flex; /* Use flexbox for better alignment */
+            align-items: center; /* Center items vertically */
+            padding: 0; /* Tighten space around each contact info */
+        }
+
         .contact-info img {
             vertical-align: middle;
             width: 25px; /* Reduced size for a more compact look */
             height: auto;
-            margin-right: 8px; /* Reduced margin */
+            margin-right: 5px; /* Reduced margin */
         }
 
         .contact-info a {
             color: #007bff;
-            text-decoration: none;
-        }
-
-        .contact-info a:hover {
-            text-decoration: underline;
+            text-decoration: underline; /* Underline email address */
         }
 
         .rating {
-            margin-top: 10px; /* Reduced margin for tighter spacing */
+            margin: 0; /* Remove any margin */
             text-align: left; /* Left-align rating */
         }
 
         .review-link {
             color: #555555; /* Dark grey color for the review link */
-            text-decoration: none;
+            text-decoration: underline; /* Underline the review link */
+            margin: 0; /* Remove margin to reduce space */
+            display: block; /* Make it a block element */
         }
 
         .review-link:hover {
@@ -70,18 +77,18 @@
         }
 
         .social-icons {
-            margin-top: 5px; /* Reduced margin */
+            margin-top: 10px; /* Adjusted margin above social icons */
             text-align: left; /* Left-align social icons */
         }
 
         .social-icons a {
-            margin: 0 3px; /* Reduced spacing between icons */
+            margin: 0 3px 0 0; /* Reduced spacing between icons */
             display: inline-block;
         }
 
         .social-icons img {
-            width: 32px; /* Slightly smaller icon size */
-            height: auto;
+            width: 35px; /* Fixed size for uniformity */
+            height: 35px; /* Fixed size for uniformity */
         }
 
         /* Responsive Design */
@@ -92,10 +99,6 @@
 
             .contact-info {
                 display: block;
-            }
-
-            .rating img {
-                display: inline-block;
             }
         }
     </style>
@@ -108,7 +111,7 @@
                     <img src="clip_image001.gif" alt="Logo">
                 </td>
                 <td rowspan="8">
-                    <img src="clip_image002.jpg" alt="Divider" style="width: 23px; height: 300px;">
+                    <img src="clip_image002.jpg" alt="Divider" style="width: 23px; height: 350px;">
                 </td>
                 <td class="contact-info">
                     <img src="clip_image003.jpg" alt="Phone">
@@ -136,12 +139,12 @@
             </tr>
             <tr>
                 <td colspan="2" class="rating">
-                    <strong>We have a 5-star rating on Google</strong>
+                    <strong><em>We have a 5-star rating on Google</em></strong>
                     <img src="clip_image007.jpg" alt="5-star rating">
                 </td>
             </tr>
             <tr>
-                <td colspan="2" class="rating">
+                <td colspan="2" class="rating" style="margin-top: 0; padding-top: 0;"> <!-- Removed margin and padding -->
                     <a href="https://www.google.com/search?q=housingnet#lrd=0x47c5e3df5901389b:0xd9a8c6af417cd388,1,," class="review-link">Click to see reviews</a>
                 </td>
             </tr>
